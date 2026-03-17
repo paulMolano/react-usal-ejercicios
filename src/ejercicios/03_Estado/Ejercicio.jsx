@@ -6,6 +6,7 @@
    ================================================================ */
 
 import { useState } from 'react'
+import Enunciado from '../../components/Enunciado.jsx'
 
 // Número secreto fijo (después lo haremos aleatorio)
 const NUMERO_SECRETO = 7
@@ -35,6 +36,20 @@ export default function Ejercicio03() {
         <h1>📝 Ejercicio 3 — Adivina el número</h1>
         <p>Estado y eventos: useState + onClick + onChange</p>
       </div>
+
+      <Enunciado
+        objetivo="Implementa un juego de adivinanza de número con estado"
+        pasos={[
+          'Crea 4 estados: intento (string), intentos (number), mensaje (string), ganado (boolean)',
+          'En comprobar(), convierte el intento a número y compáralo con NUMERO_SECRETO',
+          'Muestra una pista diferente según sea mayor, menor o igual al secreto',
+          'Enlaza el input al estado intento con value y onChange',
+          'Si ganado es true, oculta el formulario y muestra un mensaje de victoria',
+          'Implementa reiniciar() reseteando todos los estados a su valor inicial',
+        ]}
+        conceptos={['useState', 'Eventos', 'onChange', 'onClick', 'Renderizado condicional']}
+        extra="Haz que el número secreto sea aleatorio con Math.floor(Math.random() * 10) + 1"
+      />
 
       <div className="tarjeta mt-2">
         <h2>🔢 Adivina el número del 1 al 10</h2>

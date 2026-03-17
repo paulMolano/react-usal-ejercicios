@@ -13,6 +13,7 @@
    ================================================================ */
 
 import { useState } from 'react'
+import Enunciado from '../../components/Enunciado.jsx'
 
 // ────────────────────────────────────────────────────────
 // TODO A: Componente "ItemTarea"
@@ -59,6 +60,21 @@ export default function Ejercicio05() {
         <h1>📝 Proyecto Final — Lista de Tareas</h1>
         <p>Pon en práctica todo lo aprendido en el curso</p>
       </div>
+
+      <Enunciado
+        objetivo="Construye una Todo App completa combinando todo lo aprendido"
+        pasos={[
+          'Crea el componente ItemTarea con props: id, texto, completada, onToggle, onEliminar',
+          'ItemTarea debe mostrar: checkbox, texto (tachado si completada) y botón eliminar',
+          'Declara los estados: texto del input (string) y tareas (array vacío)',
+          'Implementa agregarTarea(): valida que no esté vacío, añade al array, limpia el input',
+          'Implementa toggleTarea(id): usa .map() para invertir completada de esa tarea',
+          'Implementa eliminarTarea(id): usa .filter() para quitar la tarea del array',
+          'Calcula las tareas pendientes y muéstralas en el badge del título',
+        ]}
+        conceptos={['useState', 'Props', '.map()', '.filter()', 'Componentes', 'Eventos']}
+        extra="Añade un filtro para ver: Todas / Pendientes / Completadas"
+      />
 
       <div className="tarjeta mt-2">
         <h2>

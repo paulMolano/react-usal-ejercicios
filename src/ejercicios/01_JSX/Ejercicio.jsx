@@ -5,6 +5,8 @@
    Sigue los pasos marcados con TODO.
    ================================================================ */
 
+import Enunciado from '../../components/Enunciado.jsx'
+
 function PerfilEstudiante() {
   // TODO 1: Declara una constante "nombre" con tu nombre completo
   // TODO 2: Declara una constante "carrera" con tu carrera
@@ -22,6 +24,8 @@ function PerfilEstudiante() {
 
       {/* TODO 7: Muestra el nombre en MAYÚSCULAS dentro de un <p>
                   PISTA: usa nombre.toUpperCase() */}
+
+      <p style={{ color: '#a3a3a3', fontStyle: 'italic' }}>Completa los TODOs para ver tu perfil aquí ↑</p>
     </div>
   )
 }
@@ -33,6 +37,18 @@ export default function Ejercicio01() {
         <h1>📝 Ejercicio 1 — Tu Perfil de Estudiante</h1>
         <p>Crea un componente con tu información</p>
       </div>
+      <Enunciado
+        objetivo="Crea un componente React que muestre tu perfil de estudiante"
+        pasos={[
+          'Declara las constantes nombre, carrera y aprobado dentro del componente PerfilEstudiante',
+          'Muéstralas en el JSX usando expresiones {}',
+          'Usa el operador && para mostrar el badge ✅ Aprobado solo si aprobado es true',
+          'Muestra el nombre en mayúsculas con nombre.toUpperCase()',
+          'Usa <PerfilEstudiante /> dos veces para comprobar que el componente es reutilizable',
+        ]}
+        conceptos={['JSX', 'Componentes', 'Expresiones {}', 'Renderizado condicional']}
+      />
+
 
       {/* TODO 8: Usa el componente <PerfilEstudiante /> aquí */}
 

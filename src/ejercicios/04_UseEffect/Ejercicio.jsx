@@ -6,6 +6,7 @@
    ================================================================ */
 
 import { useState, useEffect } from 'react'
+import Enunciado from '../../components/Enunciado.jsx'
 
 // Ejemplo de lo que devuelve la API:
 // {
@@ -46,6 +47,19 @@ export default function Ejercicio04() {
         <h1>📝 Ejercicio 4 — Lista de Usuarios</h1>
         <p>useEffect + fetch a una API real</p>
       </div>
+
+      <Enunciado
+        objetivo="Carga y muestra usuarios reales desde una API pública"
+        pasos={[
+          'Crea el componente TarjetaUsuario con props: nombre, email, empresa',
+          'Declara 3 estados: usuarios (array vacío), cargando (true), error (null)',
+          'Usa useEffect con [] para ejecutar una función async al montar el componente',
+          'Dentro del useEffect, haz fetch a https://jsonplaceholder.typicode.com/users',
+          'Gestiona los tres casos: cargando → spinner, error → mensaje, datos → tarjetas',
+          'Mapea los usuarios pasando user.name, user.email y user.company.name como props',
+        ]}
+        conceptos={['useEffect', 'fetch', 'async/await', 'Estados de carga', 'try/catch']}
+      />
 
       {/* TODO 4: Muestra "Cargando..." si cargando es true */}
       {/* TODO 5: Muestra el mensaje de error si error no es null */}

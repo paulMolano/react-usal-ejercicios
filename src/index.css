@@ -116,3 +116,70 @@ ul { list-style: none; }
 .grid-cards  { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem; }
 .cargando    { text-align: center; color: #a3a3a3; padding: 2rem; font-style: italic; }
 .error       { color: #5e0a0a; background: #ffe5e0; padding: 1rem; border-radius: 6px; }
+
+/* ── Enunciado ───────────────────────────────────────────── */
+.enunciado {
+  background: #fffbeb;
+  border-left: 4px solid #f59e0b;
+  border-radius: 0 8px 8px 0;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.enunciado h3 {
+  font-size: 1rem;
+  color: #92400e;
+  margin-bottom: 0.75rem;
+}
+.enunciado ol {
+  list-style: decimal;
+  padding-left: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.enunciado ol li {
+  font-size: 0.9rem;
+  color: #44403c;
+  line-height: 1.5;
+}
+.enunciado-conceptos {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 0.75rem;
+}
+.enunciado-concepto {
+  background: #fde68a;
+  color: #78350f;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+}
+.enunciado-extra {
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+  color: #78350f;
+  background: #fef3c7;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+}
+.enunciado-solucion {
+  border-color: #86efac;
+  background: #f0fdf4;
+}
+.enunciado-solucion h3 {
+  color: #166534;
+}
+.enunciado-solucion .enunciado-concepto {
+  background: #bbf7d0;
+  color: #14532d;
+}
+.enunciado-subtitulo {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #15803d;
+  margin-bottom: 0.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}

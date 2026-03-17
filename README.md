@@ -29,7 +29,7 @@ Abre el navegador en **http://localhost:5173** — verás el Ejercicio 1 cargado
 
 ```
 src/
-├── App.jsx              ← aquí cambias el ejercicio activo
+├── App.jsx              ← componente raíz (no hace falta tocarlo)
 └── ejercicios/
     ├── 01_JSX/          → Ejercicio 1: JSX y Componentes
     ├── 02_Props/        → Ejercicio 2: Props y Listas
@@ -42,15 +42,9 @@ src/
 
 ## 🔄 Cómo cambiar de ejercicio
 
-Edita `src/App.jsx`: **comenta** la línea activa y **descomenta** la del ejercicio que quieres trabajar.
-
-```jsx
-// Cambiar al ejercicio 2:
-// import Componente from './ejercicios/01_JSX/Ejercicio.jsx'  ← comenta esta
-import Componente from './ejercicios/02_Props/Ejercicio.jsx'   ← descomenta esta
-```
-
-Guarda el fichero y el navegador se recarga automáticamente.
+Pulsa el botón **☰** que aparece en la esquina inferior derecha del navegador.
+Se abre un panel lateral desde donde puedes saltar a cualquier ejercicio con un clic.
+También puedes cerrar el panel con la tecla `Escape`.
 
 ---
 

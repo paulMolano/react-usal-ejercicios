@@ -5,6 +5,8 @@
    props y .map().
    ================================================================ */
 
+import Enunciado from '../../components/Enunciado.jsx'
+
 // TODO 1: Crea un componente llamado "TarjetaAsignatura"
 //         Debe recibir por props: nombre, creditos, nota
 //         Debe mostrar: nombre, créditos y si está superada (nota >= 5)
@@ -22,6 +24,18 @@ export default function Ejercicio02() {
         <h1>📝 Ejercicio 2 — Mis Asignaturas</h1>
         <p>Props y listas con .map()</p>
       </div>
+
+      <Enunciado
+        objetivo="Construye una galería de asignaturas usando props y .map()"
+        pasos={[
+          'Crea el componente TarjetaAsignatura con las props: nombre, creditos, nota',
+          'Dentro de TarjetaAsignatura muestra si la asignatura está superada (nota >= 5)',
+          'Crea el array misAsignaturas con al menos 4 objetos { id, nombre, creditos, nota }',
+          'Usa <TarjetaAsignatura /> una vez de forma manual pasando los datos como props',
+          'Usa misAsignaturas.map() para renderizar todas las tarjetas automáticamente',
+        ]}
+        conceptos={['Props', 'Componentes', '.map()', 'key']}
+      />
 
       {/* TODO 3: Usa <TarjetaAsignatura /> una vez de forma manual
                   pasando los datos como props directamente */}
